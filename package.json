@@ -1,14 +1,18 @@
 {
-  "name": "next-i18n-test",
-  "version": "0.1.0",
-  "private": true,
   "scripts": {
+    "layer0:dev": "layer0 dev",
+    "layer0:build": "layer0 build",
+    "layer0:deploy": "layer0 deploy",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "name": "next-i18n-test",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "next": "10.2.3",
+    "next-i18next": "^8.5.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
