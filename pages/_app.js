@@ -5,4 +5,4 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default appWithTranslation(MyApp)
+export default appWithTranslation(MyApp, require('../i18next.config'))

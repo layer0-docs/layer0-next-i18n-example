@@ -1,7 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 
-export default function Home() {
+export default function Hello() {
   const { t } = useTranslation('common');
 
   return (
@@ -11,7 +11,7 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ['common', 'footer'], require('../i18next.config'))),
